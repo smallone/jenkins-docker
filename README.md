@@ -18,7 +18,7 @@ As filter set **.plugins[].shortName** and as result **Raw Output**.
 
 ## create the image
 ```sh
-$ docker image build -t <your_user>/jenkins .
+$ docker image build -t smallone/jenkins .
 ```
 ## create the secrets
 ```sh 
@@ -28,7 +28,7 @@ $ echo <password> | docker secret create jenkins-pass -
 
 ##  launch the service
 ```sh 
-$ docker stack deploy -c jenkins.yml jenkins
+$ docker stack deploy -c Jenkins/jenkins.yml jenkins
 $ docker stack ps jenkins
 $ open "http://localhost:8080" and enter secrets
 ```

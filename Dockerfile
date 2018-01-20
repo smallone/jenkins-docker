@@ -4,8 +4,8 @@ ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 
 USER root
 
-COPY security.groovy /usr/share/jenkins/ref/init.groovy.d/security.groovy
-COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
+COPY Jenkins/Setup/security.groovy /usr/share/jenkins/ref/init.groovy.d/security.groovy
+COPY Jenkins/Setup/plugins.txt /usr/share/jenkins/ref/plugins.txt
 
 RUN	echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
 	apk --no-cache update && apk --no-cache add openrc && \
