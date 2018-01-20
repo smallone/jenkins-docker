@@ -2,7 +2,7 @@ version: '3.1'
  
 services:
   main:
-    image: smallone/jenkins
+    image: <your_user>/jenkins
     ports:
       - 8080:8080
       - 50000:50000
