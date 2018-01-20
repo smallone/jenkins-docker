@@ -1,6 +1,6 @@
 
 # jenkins-docker
-This is how you can set up a [Jenkins](https://jenkins.io/) CI server in a [Docker](https://www.docker.com/) container with the possibility to build Docker container in it using a pipeline. The repository is based on a great post from Viktor Farcic on https://technologyconversations.com/2017/06/16/automating-jenkins-docker-setup
+This is how you can set up a [Jenkins](https://jenkins.io/) CI server in a [Docker](https://www.docker.com/) container with the possibility to build Docker container in it using a pipeline. The repository is based on a great post from [Viktor Farcic](https://technologyconversations.com/2017/06/16/automating-jenkins-docker-setup)
 
 The used Dockerfile refers to the alpine build of Jenkins to minimize space and security vulnerabilities. It is also enabled to build a container on a windows host (you may will see some issues when you try to install the Jenkins plugins using the plugins.txt on a windows host)
 
